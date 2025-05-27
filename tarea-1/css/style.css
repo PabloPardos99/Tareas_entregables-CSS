@@ -1,0 +1,182 @@
+@import 'bulma/css/bulma.css';
+:root {
+  /* Colores de fuentes y botones */
+  --main_color: #264065;
+  --secondary-color: #909090;
+
+  /* Fuentes  */
+  --primary-font: "Poppins", sans-serif;
+
+}
+
+/* Header */
+
+.page {
+  padding-left: 160px;
+  padding-right: 240px;
+}
+
+.navbar-start {
+  gap: 56px;
+}
+
+.navbar-brand {
+  margin-right: 164px;
+}
+
+.icons-navbar {
+  margin-left: 120px;
+  gap: 32px;
+}
+
+.buttons-login {
+    margin-left: 62px;
+
+}
+
+/* -------------- */
+
+/* Hero */
+
+/* Main text */
+.main--text {
+  width: 750px;
+  font-family: var(--primary-font);
+  margin-bottom: 32px;
+}
+
+.text {
+  color: var(--main_color);
+  font-size: 60px;
+  line-height: 1.3;
+}
+
+/* Subtitle text */
+.subtitle--text {
+  width: 620px;
+  font-family: var(--primary-font);
+}
+
+.text--sb {
+  color: var(--secondary-color);
+  font-size: 22px;
+}
+
+/* Buttons--Section */
+.text--img {
+  position: relative;
+  right: 45px;
+  color: var(--main_color);
+}
+
+.booking--button {
+  background-color: var(--main_color);
+  color: aliceblue;
+  width: 170px;
+  height: 55px;
+  border-radius: 30px;
+}
+
+.booking--button:hover {
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Background Composition */
+.background-rectangle-1 {
+  position: absolute;
+}
+
+.background-rectangle-2 {
+  position: absolute;
+  left: 1280px;
+}
+
+.background-spa {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  left: 1140px;
+  top: 60px;
+}
+
+.Hero-image-beauty-woman {
+  width: 1400px;
+  position: absolute;
+  left: 450px;
+  top: 10px;
+}
+
+/* Card Products */
+.products--container {
+  position: relative;
+  right: 380px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 30px;
+  padding-bottom: 10px;
+  width: 600px;
+}
+
+.grid--products {
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.grid--numbers {
+  margin-top: 24px;
+  color: var(--main_color);
+  font-weight: 600;
+}
+
+.grid--text {
+  font-size: 20px;
+  color: var(--secondary-color);
+  line-height: 1.5;
+  margin-top: 16px;
+}
+
+.special--treatment {
+  width: 100px;
+}
+
+/* Testimony Cards */
+.grid--testimony {
+  width: 450px;
+  position: relative;
+  left: 1190px;
+  bottom: 500px;
+  padding: 20px;
+}
+
+.testimony--card1 {
+  background-color: rgba(255, 255, 255, 0.502);
+}
+.testimony--card2 {
+  background-color: rgba(255, 255, 255, 0.833);
+  margin-top: 50px;
+  position: relative;
+  right: 120px;
+}
+
+.testimony--text {
+  font-family:var(--primary-font);
+  color: black;
+  font-size: 18px;
+}
+
+.name--testimnoy {
+  color: var(--main_color);
+  font-weight: 800;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Movimiento de las testimony--cards */
+.testimony--card1,
+.testimony--card2 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimony--card1:hover,
+.testimony--card2:hover {
+  transform: translateY(-10px);
+}

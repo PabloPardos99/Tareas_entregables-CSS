@@ -1,0 +1,14 @@
+.header_principal {
+   padding-right: 240px;
+   padding-left: 160px;
+   padding-top: 33px;
+   
+   .navbar{
+    display: flex;
+    justify-content: space-between
+   }
+   .navbar-start {
+    @include reset-list();
+    justify-items: space-between;
+   }
+}
