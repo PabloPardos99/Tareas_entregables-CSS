@@ -1,0 +1,228 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import 'bulma/css/bulma.css';
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Fuente principal */
+  --primary-font: "Merriweather", serif;
+  --secundary-font: "Roboto", sans-serif;
+
+  /* Colores*/
+  --color-1: #DB2A6B;
+  --color-2: #ffffff88; 
+  /* Opacidad del blanco al 50% */
+  background-color: #2B2D38;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* HEADER */
+.page {
+  padding-left: 160px;
+  padding-right: 240px;
+}
+
+/*  NAVBAR*/
+.navbar {
+  position: relative;
+  background-color: #ffffff00;
+  margin-bottom: 100px;
+}
+
+.navbar-brand { 
+  margin-right: 742px;
+}
+
+.navbar-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Quitamos el cuadrado ese to feo de Hover */
+
+.navbar-item:hover {
+  background-color: #2b2d3800;
+}
+
+/* Creacion de la barra horizontal de los navbar-items */
+
+.indicator {
+    position: absolute;
+    height: 4px; /* Altura de la barra */
+    background-color: var(--color-1); /* Color de la barra */
+    bottom: 0; /* Posición en la parte inferior */
+    left: 0; /* Comienza alineada a la izquierda */
+    width: 0; /* Comienza con ancho 0 */
+    transition: width 0.3s ease, left 0.3s ease; /* Transición suave */
+}
+
+.navbar-item:hover {
+    color: var(--color-1); /* Cambia el color del texto al pasar el cursor */
+}
+
+/* Ajuste para que la barra se alinee con el item hoverado */
+.navbar-item:hover ~ .indicator {
+    width: 100%; /* Ancho completo al pasar el cursor */
+    left: 0; /* Alinea la barra a la izquierda */
+}
+
+.navbar-item:hover .indicator {
+    width: 100%; /* Ancho completo al pasar el cursor */
+    left: 0; /* Alinea la barra a la izquierda */
+}
+
+/* HERO Section */
+
+/* Hero Text */
+
+.--text-section {
+  width: 750px;
+}
+.--main-text {
+  font-family: var(--primary-font);
+  margin-bottom: 24px;
+}
+.text {
+  font-size: 95px;
+  font-weight: 600;
+}
+
+.--subtitle-text {
+  width: 600px;
+  font-family: var(--secundary-font);
+  margin-bottom: 33px;
+}
+
+.subtitulo {
+  font-size: 25px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* Hero Buttons */
+
+.get-started--button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--color-1);
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 3px;
+}
+
+.get-started--button:hover {
+  background-color: #ffffff;
+  color: #2B2D38;
+}
+
+.learn-more--button {
+  background-color: #ffffff00;
+  border-color: var(--color-1);
+  border-width: 1px;  
+}
+
+.learn-more--button:hover {
+  position: relative;
+  border-color: #2B2D38;
+  left: 8px;
+  transition: left 0.5s ease;
+}
+
+
+.learn-more--button:hover img{
+  position: relative;
+  left: 30px;
+  transition: left 0.5s ease;
+}
+
+/* Images Grid */
+
+.image--section {
+  position: relative;
+  left: 750px;
+  bottom: 600px;
+}
+
+.grid-- {
+  width: 868px;
+  /* position: relative; */
+  justify-items: center;
+  /* left: 750px; */
+  /* bottom: 600px; */
+}
+
+.image--1 {
+  justify-self: end;
+  margin: 0;
+  padding: 0;
+}
+
+.image--2 {
+  /* justify-self: end; */
+}
+
+.image--4 {
+  /* justify-self: end; */
+}
+
+.image--5 {
+  align-self: start;
+  justify-self: end;
+}
+
+.image--3 {
+  position: relative;
+  top: 130px;
+  justify-self: start;
+}
+
+/* Info Cards Grid */
+
+.info--cards {
+  position: relative;
+  bottom: 680px;
+}
+
+.square--image {
+  justify-self: end;
+  width: 60px;
+  background-color: #ffffff25;
+  justify-items: center;
+  border-radius: 12px;
+}
+
+.image--card {
+  width: 120px;
+  position: relative;
+  left: 0px;
+  top: 4px;
+  padding: 5px;
+}
+.grid--cards {
+  width: 500px;
+  align-items: start;
+}
+
+.card--text {
+  align-self: start;
+  color: #ffffff;
+  margin-right: 48px;
+  font-size: 20px;
+}
+
+/* Background Composition */
+
+.background--composition {
+  position: absolute;
+  left: 1010px;
+  top: 300px;
+}
