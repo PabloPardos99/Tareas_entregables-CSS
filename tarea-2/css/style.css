@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
-@import 'bulma/css/bulma.css';
+@import '/node_modules/bulma/css/bulma.css';
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -166,14 +166,6 @@
   padding: 0;
 }
 
-.image--2 {
-  /* justify-self: end; */
-}
-
-.image--4 {
-  /* justify-self: end; */
-}
-
 .image--5 {
   align-self: start;
   justify-self: end;
@@ -225,4 +217,82 @@
   position: absolute;
   left: 1010px;
   top: 300px;
+}
+
+/* Movimiento de las imagenes del Grid */
+
+  /* Estilo general para las imágenes */
+  .animated-img {
+    opacity: 0;
+    transform: translateY(0);
+    animation-fill-mode: forwards;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+  }
+
+  /* Desde arriba */
+  .from-top {
+    animation-name: slideFromTop;
+  }
+
+  /* Desde abajo */
+  .from-bottom {
+    animation-name: slideFromBottom;
+  }
+
+  /* Delay de las imagenes (efecto escalonado) */
+  .image--1 {
+    animation-delay: 0.2s;
+  }
+  .image--2 {
+    animation-delay: 0.4s;
+  }
+  .image--3 {
+    animation-delay: 0.2s;
+  }
+  .image--4 {
+    animation-delay: 0.4s;
+  }
+  .image--5 {
+    animation-delay: 0.2s;
+  }
+
+  /* Animaciones */
+
+  @keyframes slideFromTop {
+    0% {
+      transform: translateY(-100vh);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideFromBottom {
+    0% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+/* Movimiento de las Info--Cards */
+
+.Build-Community,
+.Share-Events,
+.card--text,
+.Get-Information{
+  transition: transform 0.3s ease-in-out;
+}
+
+.Build-Community:hover,
+.Share-Events:hover,
+.card--text:hover,
+.Get-Information:hover {
+  transform: translateY(-10px);
 }
